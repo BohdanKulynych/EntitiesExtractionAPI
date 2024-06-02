@@ -10,7 +10,7 @@ for file in *; do
         echo "Processing file: $file"
 
         # Send a POST request with the file to the specified API endpoint.
-        response=$(curl -X POST http://localhost:4040/api/v1/extract -F "file=@$file")
+        response=$(curl -X POST http://localhost:5000/api/v1/extract -F "file=@$file")
 
         # Print the HTTP response code from the curl request.
         echo "Response code for $file: $response"
