@@ -2,7 +2,7 @@
 
 set -e
 
-cd ../"Programming Challenge Files"
+cd ./"Programming Challenge Files"
 
 for file in *; do
     if [ -f "$file" ]; then
